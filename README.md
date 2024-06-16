@@ -43,7 +43,21 @@ cd wslprojectphp
 ```sh
 make up
 ```
-### Запустите миграцию
+### Используйте файл dataBaseBackup3.sql для восстановления бабзы данных
+
+#### Зайдите в pgAdmin4
+#### Подключитесь к серверу по 
+```
+Host name / username : localhost
+Port: 5433
+Username: postgres
+Password: postgres
+```
+#### Создайте базу данных с названием mydatabase (если она создана удалите её принудительно)
+#### Правой кнопкой по mydatabase -> Query Tool 
+#### Исполните SQL который находится в файле dataBaseBackup3.sql в корне проекта
+
+~~### Запустите миграцию~~
 
 ```sh
 make php-shell
@@ -54,4 +68,4 @@ php bin/console make:migration
 затем
 ```sh
 php bin/console cache:clear
-```
+```~~
