@@ -51,3 +51,7 @@ make php-shell
 ```sh
 php bin/console make:migration 
 ```
+затем
+```sh
+php bin/console cache:clear
+```
