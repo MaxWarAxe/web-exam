@@ -57,6 +57,19 @@ Password: postgres
 #### 4) Правой кнопкой по mydatabase -> Query Tool 
 #### 5) Исполните SQL который находится в файле dataBaseBackup3.sql в корне проекта
 
+### Доп параметры для работы изображений
+```sh
+make php-shell
+```
+```sh
+cd ..
+```
+
+```sh
+chown -R www-data:www-data html
+```
+
+
 ~~### Запустите миграцию~~
 
 ```sh
