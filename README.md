@@ -14,6 +14,7 @@ git clone https://github.com/MaxWarAxe/web-exam.git
 ```sh
 Установить и запустить docker 
 ```
+## Запуск фронтенда
 
 ### Переход в директорию
 
@@ -30,4 +31,23 @@ npm install
 
 ```sh
 npm run dev
+```
+## Запуск бэкенда
+
+### Перейдите в директорию wslprojectphp
+```sh
+cd wslprojectphp
+```
+### Запустите все контейнеры
+
+```sh
+make up
+```
+### Запустите миграцию
+
+```sh
+make php-shell
+```
+```sh
+php bin/console make:migration 
 ```
