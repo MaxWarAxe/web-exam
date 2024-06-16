@@ -5,10 +5,12 @@
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     'app_hello_getallposts' => [[], ['_controller' => 'App\\Controller\\HelloController::getAllPosts'], [], [['text', '/posts']], [], [], []],
+    'app_hello_getpostsfiltered' => [['type'], ['_controller' => 'App\\Controller\\HelloController::getPostsFiltered'], [], [['variable', '/', '[^/]++', 'type', true], ['text', '/posts']], [], [], []],
     'app_hello_addnewpost' => [[], ['_controller' => 'App\\Controller\\HelloController::addNewPost'], [], [['text', '/posts/new']], [], [], []],
     'app_hello_updatepost' => [['id'], ['_controller' => 'App\\Controller\\HelloController::updatePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/posts/update']], [], [], []],
     'app_hello_deletepost' => [['id'], ['_controller' => 'App\\Controller\\HelloController::deletePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/posts/delete']], [], [], []],
     'App\Controller\HelloController::getAllPosts' => [[], ['_controller' => 'App\\Controller\\HelloController::getAllPosts'], [], [['text', '/posts']], [], [], []],
+    'App\Controller\HelloController::getPostsFiltered' => [['type'], ['_controller' => 'App\\Controller\\HelloController::getPostsFiltered'], [], [['variable', '/', '[^/]++', 'type', true], ['text', '/posts']], [], [], []],
     'App\Controller\HelloController::addNewPost' => [[], ['_controller' => 'App\\Controller\\HelloController::addNewPost'], [], [['text', '/posts/new']], [], [], []],
     'App\Controller\HelloController::updatePost' => [['id'], ['_controller' => 'App\\Controller\\HelloController::updatePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/posts/update']], [], [], []],
     'App\Controller\HelloController::deletePost' => [['id'], ['_controller' => 'App\\Controller\\HelloController::deletePost'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/posts/delete']], [], [], []],
